@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>231</width>
+    <height>75</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Arial Black</family>
+    <pointsize>12</pointsize>
+    <weight>75</weight>
+    <bold>true</bold>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>图像</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>C:/Users/yuancaimaiyi/Desktop/timg.jpg</normaloff>C:/Users/yuancaimaiyi/Desktop/timg.jpg</iconset>
+  </property>
+  <property name="windowOpacity">
+   <double>2.000000000000000</double>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>231</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuopen">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="OpenImage"/>
+    <addaction name="separator"/>
+    <addaction name="Exit"/>
+   </widget>
+   <widget class="QMenu" name="menumatching">
+    <property name="title">
+     <string>特征匹配</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="Sift"/>
+    <addaction name="Surf"/>
+    <addaction name="Daisy"/>
+   </widget>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>人脸识别</string>
+    </property>
+    <addaction name="actionRecognize"/>
+   </widget>
+   <addaction name="menuopen"/>
+   <addaction name="menumatching"/>
+   <addaction name="menu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="Sift">
+   <property name="text">
+    <string>SIFT </string>
+   </property>
+  </action>
+  <action name="Surf">
+   <property name="text">
+    <string>SURF</string>
+   </property>
+  </action>
+  <action name="Daisy">
+   <property name="text">
+    <string>ORB</string>
+   </property>
+  </action>
+  <action name="openpng">
+   <property name="text">
+    <string>png</string>
+   </property>
+  </action>
+  <action name="opentif">
+   <property name="text">
+    <string>tif</string>
+   </property>
+  </action>
+  <action name="OpenImage">
+   <property name="icon">
+    <iconset>
+     <normaloff>C:/Users/yuancaimaiyi/Desktop/123.jpg</normaloff>C:/Users/yuancaimaiyi/Desktop/123.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>openfile</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+1</string>
+   </property>
+  </action>
+  <action name="Exit">
+   <property name="icon">
+    <iconset>
+     <normaloff>C:/Users/yuancaimaiyi/Desktop/ti.jpg</normaloff>C:/Users/yuancaimaiyi/Desktop/ti.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>exit</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+2</string>
+   </property>
+  </action>
+  <action name="actionRecognize">
+   <property name="text">
+    <string>Recognize</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
